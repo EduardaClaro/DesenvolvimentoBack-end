@@ -1,5 +1,13 @@
-﻿Console.WriteLine("Digite seu nome:"); // console é uma classe estática 
+﻿Console.WriteLine("Digite um número inteiro:"); // console é uma classe estática 
 
-int number = Convert.ToInt32(Console.ReadLine());
+try
+{
+  int number = Convert.ToInt32(Console.ReadLine());
+  Console.WriteLine("Você digitou " + number);
+}
+catch (Exception e) //catch - pegar o erro para ver o que está acontecendo
+{
+  Console.WriteLine(e.Message);
+}
 
-Console.WriteLine("Você digitou " + number);
+Console.WriteLine("Comandos após o erro");

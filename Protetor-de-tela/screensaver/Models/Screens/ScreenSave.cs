@@ -7,7 +7,8 @@ using System.Windows.Forms;
 public class ScreenSaver : Form
 {
     // ******* Declare suas formas geométricas aqui (escopo global) *******
-    private MyRectangle r;
+    private List<MyRectangle> rectangles = new();
+    private const int RECTANGLE_COUNT = 10; // Quantidade de retângulos
     // ********************************************************************
     private Timer ControlTimer;
 
@@ -19,13 +20,15 @@ public class ScreenSaver : Form
         this.BackColor = Color.Black;                   
         // Inicializa o temporizador de controle
         ControlTimer = new Timer();
-        ControlTimer.Interval = 16;                     // 16 ms = ~60 fps
+        ControlTimer.Interval = 10;                     // 16 ms = ~60 fps
         // Controle da animação
         ControlTimer.Tick += (s, e) =>
         {
             // ****** Mova suas formas geométricas aqui ******
-            r?.Move(this.ClientSize);
-
+            foreach (var rect in rectangles)
+            {
+                rect.Move(this.ClientSize);
+            }
             // ***********************************************
                 Invalidate(); // Foça a tela a ser redesenhada.
         }; // Função anônima disparada pelo ControlTimer a cada Interval (ms)
@@ -36,7 +39,13 @@ public class ScreenSaver : Form
     {
         base.OnLoad(e);
         // ****** Instancie suas formas geométricas aqui ******
-        r = new MyRectangle(x:0, y:0, Color.Red, width:100, height:50);
+        rectangles = new List<MyRectangle>();
+        
+        // Cria múltiplos retângulos com posições, tamanhos, velocidades e cores aleatórias
+        for (int i = 0; i < RECTANGLE_COUNT; i++)
+        {
+            rectangles.Add(new MyRectangle(this.ClientSize.Width, this.ClientSize.Height));
+        }
         // ****************************************************
     }
 
@@ -44,9 +53,10 @@ public class ScreenSaver : Form
     {
         base.OnPaint(e);
         // ****** Desenhe suas formas geométricas aqui *******
-
-        r.Draw(e.Graphics);
-
+        foreach (var rect in rectangles)
+        {
+            rect.Draw(e.Graphics);
+        }
         // ***************************************************
 
     }

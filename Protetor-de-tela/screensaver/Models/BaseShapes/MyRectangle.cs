@@ -2,16 +2,17 @@ namespace Models.BaseShapes;
 
 public class MyRectangle : Shape
 {
-    //Atributos
-    public int Width;
-    public int Height;
-
-
     //Construtores
     public MyRectangle(int x, int y, Color color, int width, int height) : base(x, y, color)
     {
         Width = width;
         Height = height;
+    }
+
+    // Sobrecarga que usa o construtor aleatório da classe base
+    public MyRectangle(int screenWidth, int screenHeight) : base(screenWidth, screenHeight)
+    {
+        
     }
 
     //Métodos
@@ -21,22 +22,23 @@ public class MyRectangle : Shape
         g.FillRectangle(brush, X, Y, Width, Height);
     }
 
-    // Override Move to apply bounce against the given bounds (window client size)
     public override void Move(Size bounds)
     {
-        // Update position
         base.Move(bounds);
 
-        // Check horizontal bounds
+        bool colorChanged = false; 
+
         if (X < 0)
         {
             X = 0;
             SpeedX = -SpeedX;
+            colorChanged = true;
         }
         else if (X + Width > bounds.Width)
         {
             X = Math.Max(0, bounds.Width - Width);
             SpeedX = -SpeedX;
+            colorChanged = true;
         }
 
         // Check vertical bounds
@@ -44,11 +46,18 @@ public class MyRectangle : Shape
         {
             Y = 0;
             SpeedY = -SpeedY;
+            colorChanged = true;
         }
         else if (Y + Height > bounds.Height)
         {
             Y = Math.Max(0, bounds.Height - Height);
             SpeedY = -SpeedY;
+            colorChanged = true;
+        }
+
+        if (colorChanged)
+        {
+            ShapeColor = ColorGenerate();
         }
     }
 }

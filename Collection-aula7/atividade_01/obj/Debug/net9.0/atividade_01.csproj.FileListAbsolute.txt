@@ -1,0 +1,15 @@
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\bin\Debug\net9.0\atividade_01.exe
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\bin\Debug\net9.0\atividade_01.deps.json
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\bin\Debug\net9.0\atividade_01.runtimeconfig.json
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\bin\Debug\net9.0\atividade_01.dll
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\bin\Debug\net9.0\atividade_01.pdb
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\obj\Debug\net9.0\atividade_01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\obj\Debug\net9.0\atividade_01.AssemblyInfoInputs.cache
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\obj\Debug\net9.0\atividade_01.AssemblyInfo.cs
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\obj\Debug\net9.0\atividade_01.csproj.CoreCompileInputs.cache
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\obj\Debug\net9.0\atividade_01.sourcelink.json
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\obj\Debug\net9.0\atividade_01.dll
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\obj\Debug\net9.0\refint\atividade_01.dll
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\obj\Debug\net9.0\atividade_01.pdb
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\obj\Debug\net9.0\atividade_01.genruntimeconfig.cache
+C:\Workspace\DesenvolvimentoBack-end\DesenvolvimentoBack-end\Collection-aula7\atividade_01\obj\Debug\net9.0\ref\atividade_01.dll
